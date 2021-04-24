@@ -1,84 +1,136 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
 body { 
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
-    background: black;
-    background-image: url("./img/astros.jpg");
-    background-position: left 300px top;
-    background-repeat: no-repeat cover;
-
-}
-.contenedor{
     width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: auto;
+    background: linear-gradient(70deg, #FDB892 10%, #F08778 90%);
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #EFEFEF;
+    box-shadow: 3px 13px 35px -4px rgba(0,0,0,0.85);
+}
+.cabecera img{
+    margin-left: 3%;
+}
+.contenedor-buscar{
+    display: block;
+    margin-top: 50px;
+    margin-right: 10%;
+    text-align: right; 
+}
+.contenedor-personaje{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 5px;
     
-}img{
-  
-    max-width: 27%;
-    margin: auto;
-    border: 3px solid #546c6c;
-    border-radius: 20px;
+}
+img{
+    border-radius: 5%;
 }
 
-.image{
-    margin-top: 10px;
-    max-width: 100%;
-    margin: auto;
-    border: 5px solid #d5e2e1;
-    border-radius: 20px;
-    box-shadow: 0 0 0 3px rgba(68, 67, 67, 0.3);
-}
 .caracter{
-    padding: 15px;
-    max-width: 540%;
+    padding: 2%;
     margin: auto;
-    border: 5px solid #048595;
+    max-width: auto;
+    background-image:url(./img/astros.jpg);
+    -webkit-box-shadow: 17px 13px 32px 8px rgba(28,28,28,0.78); 
+    box-shadow: 17px 13px 32px 8px rgba(28,28,28,0.78);
     border-radius: 20px;
-    box-shadow: 0 0 0 3px rgba(68, 67, 67, 0.3);
+    margin-top: 3%;
 }
-h1{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-family:  monospace;
-}
-h2{
-    color: #fff;
+h3{
+    color: rgb(0, 0, 0);
     font-family:  monospace;
     font-weight: 100;
+    padding: 5px;
 }
 p{ 
-    
-    color: #fff;
+    color: rgb(250, 250, 250);
     font-family: monospace;
     text-decoration-style: 5px 0 5px;
     max-width: 100%;
     text-align: center;
-    border: 1px solid #048595;
-   
-   
-    
 }
-.buscar, input{
-   
+ input{
     font-family: inherit;
     font-size: 20px;
     max-width: 100%;
     width: 280px;
     height: 35px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 10px 0 30px;
     text-align: center;
     color: #111;
     background-color: #e5e5e5;
-    box-shadow: 0 0 0 3px rgba(46, 46, 46, 0.3);
+    box-shadow: 2px 3px 5px 4px rgba(28, 28, 28, 0.356);
 
 }
 input:focus {
     outline: none;
     box-shadow: 0 0 0 3px #02b1c8;	
 }
+
+.caracter:hover, animationFrames{
+    animation: animationFrames linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 0%;
+    -webkit-animation: animationFrames linear 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 0%;
+}
+    @keyframes animationFrames{
+        0% {
+          transform:  rotate(0deg) ;
+        }
+        20% {
+          transform:  rotate(15deg) ;
+        }
+        40% {
+          transform:  rotate(-10deg) ;
+        }
+        60% {
+          transform:  rotate(5deg) ;
+        }
+        80% {
+          transform:  rotate(-5deg) ;
+        }
+        100% {
+          transform:  rotate(0deg) ;
+        }
+    }
+      @-webkit-keyframes animationFrames {
+        0% {
+          -webkit-transform:  rotate(0deg) ;
+        }
+        20% {
+          -webkit-transform:  rotate(15deg) ;
+        }
+        40% {
+          -webkit-transform:  rotate(-10deg) ;
+        }
+        60% {
+          -webkit-transform:  rotate(5deg) ;
+        }
+        80% {
+          -webkit-transform:  rotate(-5deg) ;
+        }
+        100% {
+          -webkit-transform:  rotate(0deg) ;
+        }
+    }
+      
+    
+      
+      
+
