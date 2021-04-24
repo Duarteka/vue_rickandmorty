@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    background-image: url("./img/astros.jpg");
+    background-position: left 300px top;
+    background-repeat: no-repeat cover;
+
+}
+.contenedor{
+    width: 100%;
+    
+}img{
+  
+    max-width: 27%;
+    margin: auto;
+    border: 3px solid #546c6c;
+    border-radius: 20px;
+}
+
+.image{
+    margin-top: 10px;
+    max-width: 100%;
+    margin: auto;
+    border: 5px solid #d5e2e1;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px rgba(68, 67, 67, 0.3);
+}
+.caracter{
+    padding: 15px;
+    max-width: 540%;
+    margin: auto;
+    border: 5px solid #048595;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px rgba(68, 67, 67, 0.3);
+}
+h1{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:  monospace;
+}
+h2{
+    color: #fff;
+    font-family:  monospace;
+    font-weight: 100;
+}
+p{ 
+    
+    color: #fff;
+    font-family: monospace;
+    text-decoration-style: 5px 0 5px;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid #048595;
+   
+   
+    
+}
+.buscar, input{
+   
+    font-family: inherit;
+    font-size: 20px;
+    max-width: 100%;
+    width: 280px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0 30px;
+    text-align: center;
+    color: #111;
+    background-color: #e5e5e5;
+    box-shadow: 0 0 0 3px rgba(46, 46, 46, 0.3);
+
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #02b1c8;	
+}
